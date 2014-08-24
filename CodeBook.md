@@ -1,24 +1,12 @@
-Codebook for Getting-Cleaning-Data-Project 
+Summarized Data File for UCI HAR 
 =============================
 
-Git repository associated with Course project for the Coursera Getting &amp; Creating Data Class
+This codebook 
 
-This repository shares the files required for completion of the Coursera Getting & Cleaning Data course project. Contained within this repository are: 
 
-<ol>
-<li>This README.md file, which outlines the contents of the repository and its purpose</li>
-<li> A code book (CodeBook.md) that describes the variables, the data, and the work performed on the data </li>
-<li> The R script: run_anlysis.R, which executes the operations required for the Coursera Getting & Cleaning Data course project </li>
-</ol>
-Specifically, run_analysis.R does the following:
 
-<ul>
-<li>Loads a variety of data sets collected from the UCI HAR study (information at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
-Data can be downloaded here (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
-Data should be extracted into the working directory;</li>
-<li>Combines observations from training and testing data sets into single data frames;</li>
-<li>Distills observational data, keeping only values that are measures of means or standard deviation;</li> 
-<li>Merges factor variables to the distilled observational data, specifying the activity being performed (ACTIVITY) and the subject of the observation (SUBJECT). The ACTIVITY variable is converted to a descriptive character (using supplied file activity_labels.txt);</li> 
-<li>Creates and exports a tidy data set, containing the mean of each variable across all observations
-for each subject and activity combination.</li> 
-</ul>
+<h2>Data Set Information:</h2>
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
